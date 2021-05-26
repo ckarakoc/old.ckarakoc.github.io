@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 title                    : "Celal Karakoç"
-title_separator          : "|"
+title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Celal Karakoç"
 description              : ""
@@ -98,7 +98,6 @@ author:
   avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Computer Science student at the Technical University of Delft."
   location         : "Rotterdam, The Netherlands"
-  email            : "c.karakoc@live.nl"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -107,11 +106,8 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://ckarakoc.nl"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/gotdzellal"
-#    - label: "Facebook"
-#      icon: "fab fa-fw fa-facebook-square"
-#      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ckarakoc"
@@ -119,7 +115,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/gotdzellal"
     - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://linkedin.com/in/celal-karakoç/"
 
 
@@ -129,21 +125,15 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/gotdzellal"
-#    - label: "Facebook"
-#      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-fw fa-github-square"
       url: "https://github.com/ckarakoc"
-#    - label: "GitLab"
-#      icon: "fab fa-fw fa-gitlab"
-      # url:
-#    - label: "Bitbucket"
-#      icon: "fab fa-fw fa-bitbucket"
-      # url:
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      icon: "fab fa-fw fa-instagram-square"
       url: "https://instagram.com/gotdzellal"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/celal-karakoç/"
 
 
 # Reading Files
