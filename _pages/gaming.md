@@ -1,0 +1,12 @@
+---
+layout: archive
+permalink: /gaming/
+title: "Gaming"
+excerpt: ""
+author_profile: true
+header:
+    overlay_image: /assets/images/19546.jpg
+    overlay_filter: 0.5
+---
+
+Hello World! gaming page.

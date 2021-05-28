@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /about/
-title: ""
+title: "About"
 excerpt: ""
 author_profile: true
 header:
