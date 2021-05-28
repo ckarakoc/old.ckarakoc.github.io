@@ -94,4 +94,9 @@
   &--small {
     font-size: $type-size-7;
   }
+
+  /* button for the curriculum vitae */
+  &--cv {
+    float: right;
+  }
 }
