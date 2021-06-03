@@ -1,0 +1,115 @@
+.tag_button {
+  display: inline-block;
+
+  input {
+    display: block;
+    position: absolute;
+  }
+
+  input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+  }
+
+  input[type="radio"]:checked + label {
+    background: yellow;
+  }
+
+  label {
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    z-index: 90;
+  }
+
+  label:hover {
+    background: #DDD;
+  }
+}
+
+/* Blocks */
+
+.block {
+  width: 200px;
+  height: 300px;
+  background-size: 100% 100%;
+  border: 2px solid #2a2a2a;
+  margin: 10px;
+  display: inline-block;
+}
+
+.inner-block {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .5);
+}
+
+.inner-block:hover {
+  background: rgba(255, 255, 255, .1);
+}
+
+.block-head {
+  height: 15%;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Ubuntu Mono";
+  font-size: 16px;
+  /* font-size: 1vw; */
+  margin: 0;
+  padding: 0;
+  background-color: #eb2a2a;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.divider {
+  padding: 0;
+  margin: 0;
+}
+
+.block-content {
+  height: 75%;
+  width: 100%;
+  opacity: 0;
+  vertical-align: top;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.block-content:hover {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 1;
+}
+
+.inside_tag_button {
+  box-shadow: inset 0px 1px 0px 0px #f9eca0;
+  background: linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+  border-radius: 6px;
+  border: 1px solid #e65f44;
+  display: inline-block;
+  color: #c92200;
+  font-family: "Ubuntu Mono";
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ded17c;
+  margin: 10px 2px;
+}

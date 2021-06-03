@@ -9,6 +9,8 @@ const MAX_SCALE_UNIT = 1.0;
 let scaleUnit = 1;
 let glob_pdf;
 
+const CVPath = '/assets/docs/CV__Online_.pdf';
+
 // ZOOM IN/OUT FUNCTIONS
 document.getElementById("zoom-in").addEventListener("click", () => {
     scaleUnit = Math.max(scaleUnit - DEFAULT_SCALE_DELTA, MIN_SCALE_UNIT);
@@ -50,7 +52,7 @@ function renderPage(page) {
 }
 
 // renders 1st pdf page
-pdfjsLib.getDocument('/assets/docs/CV.pdf').promise.then(pdf => {
+pdfjsLib.getDocument(CVPath).promise.then(pdf => {
     console.log('PDF Loaded');
     pdf.getPage(1).then(page => {
         renderPage(page);
