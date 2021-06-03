@@ -1,6 +1,6 @@
 <div class="projects-outer">
     <fieldset>
-        <legend>Tag</legend>
+        <legend>Tags</legend>
         <div class="tag_button">
             <input type="radio" id="all_button" name="tag" checked="checked">
             <label for="all_button">All</label>
@@ -21,7 +21,7 @@
         <div class="block {{ include.box[0]['tags'][i] }}"
              style="background-image: url({{ include.box[1]['images'][i] }});">
             <div class="inner-block">
-                <div class="block-head">{{ include.box[2]['titles'][i] }}</div>
+                <div class="block-head"><span>{{ include.box[2]['titles'][i] }}</span></div>
                 <hr class="divider">
                 <div class="block-content">
                     <div class="inside_tag_button">{{ include.box[0]['tags'][i] | replace: ' ', '</div>

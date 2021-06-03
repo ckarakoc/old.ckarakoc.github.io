@@ -1,5 +1,6 @@
 .tag_button {
   display: inline-block;
+  font-family: "Ubuntu Mono";
 
   input {
     display: block;
@@ -12,7 +13,8 @@
   }
 
   input[type="radio"]:checked + label {
-    background: yellow;
+    background: rebeccapurple;
+    color: white;
   }
 
   label {
@@ -21,10 +23,10 @@
     border: 1px solid #CCC;
     cursor: pointer;
     z-index: 90;
-  }
 
-  label:hover {
-    background: #DDD;
+    &:hover {
+      background: #DDD;
+    }
   }
 }
 
@@ -37,79 +39,92 @@
   border: 2px solid #2a2a2a;
   margin: 10px;
   display: inline-block;
+
+  .inner-block {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+
+    &:hover {
+      background: rgba(255, 255, 255, .1);
+    }
+  }
+
+  .block-head {
+    height: 20%;
+    width: 100%;
+    //vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-family: "Ubuntu Mono";
+    font-size: 16px;
+    /* font-size: 1vw; */
+    margin: 0;
+    padding: 0;
+    //background-color: #eb2a2a;
+    background-color: purple;
+    overflow: hidden;
+    //text-overflow: ellipsis;
+    //white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .divider {
+    padding: 0;
+    margin: 0;
+  }
+
+  .block-content {
+    height: 75%;
+    width: 100%;
+    opacity: 0;
+    vertical-align: top;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+      opacity: 1;
+    }
+  }
 }
 
-.inner-block {
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, .5);
-}
-
-.inner-block:hover {
-  background: rgba(255, 255, 255, .1);
-}
-
-.block-head {
-  height: 15%;
-  width: 100%;
-  vertical-align: middle;
-  text-align: center;
-  font-family: "Ubuntu Mono";
-  font-size: 16px;
-  /* font-size: 1vw; */
-  margin: 0;
-  padding: 0;
-  background-color: #eb2a2a;
-  overflow: hidden;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.divider {
-  padding: 0;
-  margin: 0;
-}
-
-.block-content {
-  height: 75%;
-  width: 100%;
-  opacity: 0;
-  vertical-align: top;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.block-content:hover {
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
-  opacity: 1;
-}
-
+// On hover: shows the tag
 .inside_tag_button {
-  box-shadow: inset 0px 1px 0px 0px #f9eca0;
-  background: linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+  box-shadow: inset 0 1px 0 0 #f9eca0;
+  background: linear-gradient(to bottom, rebeccapurple 5%, mediumpurple 100%);
   border-radius: 6px;
-  border: 1px solid #e65f44;
+  border: 1px solid rebeccapurple;
   display: inline-block;
-  color: #c92200;
+  color: white;
   font-family: "Ubuntu Mono";
   font-size: 15px;
   font-weight: bold;
   padding: 6px 24px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #ded17c;
+  text-shadow: 0 1px 0 #ded17c;
   margin: 10px 2px;
 }
