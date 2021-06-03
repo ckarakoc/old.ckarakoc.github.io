@@ -3,8 +3,8 @@
 // Render first page
 
 const DEFAULT_SCALE_DELTA = 0.25;
-const MIN_SCALE_UNIT = 0.25;
-const MAX_SCALE_UNIT = 1.0;
+const MIN_SCALE_UNIT = 1;
+const MAX_SCALE_UNIT = 10.0;
 
 let scaleUnit = 1;
 let glob_pdf;
@@ -12,7 +12,7 @@ let glob_pdf;
 const CVPath = '/assets/docs/CV__Online_.pdf';
 
 // ZOOM IN/OUT FUNCTIONS
-document.getElementById("zoom-in").addEventListener("click", () => {
+document.getElementById("zoom-out").addEventListener("click", () => {
     scaleUnit = Math.max(scaleUnit - DEFAULT_SCALE_DELTA, MIN_SCALE_UNIT);
     console.log(scaleUnit)
     glob_pdf.getPage(1).then(page => {
@@ -20,7 +20,7 @@ document.getElementById("zoom-in").addEventListener("click", () => {
     });
 });
 
-document.getElementById("zoom-out").addEventListener("click", () => {
+document.getElementById("zoom-in").addEventListener("click", () => {
     scaleUnit = Math.min(scaleUnit + DEFAULT_SCALE_DELTA, MAX_SCALE_UNIT);
     console.log(scaleUnit)
     glob_pdf.getPage(1).then(page => {
@@ -30,16 +30,14 @@ document.getElementById("zoom-out").addEventListener("click", () => {
 
 // Renders a PDF page to a canvas
 function renderPage(page) {
-    const container = document.getElementById('pdf-container');
-    const canvas = document.getElementById('pdf-canvas');
-    const context = canvas.getContext('2d');
+    // const container = document.getElementById('pdf-container');
+    var canvas = document.getElementById('pdf-canvas');
+    var context = canvas.getContext('2d');
 
-    let viewport = page.getViewport({scale: scaleUnit});
-    const scale = container.clientWidth / viewport.width;
-    viewport = page.getViewport({scale: scale});
+    var viewport = page.getViewport({scale: scaleUnit});
 
-    canvas.width = viewport.width - viewport.width * (1 - scaleUnit);
-    canvas.height = viewport.height - viewport.height * (1 - scaleUnit);
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
 
     const renderContext = {
         canvasContext: context,

@@ -1,12 +1,65 @@
 #pdf-canvas {
   border: 1px solid black;
+  vertical-align: middle;
 }
 
-.zoom-buttons {
+#pdf-container {
+  @include clearfix;
+  height: 700px;
+  overflow: auto;
+  background: #333;
+  text-align: center;
+  border: 3px solid;
+  margin-bottom: 5px;
+}
+
+
+.pdf-navigation-controls {
   float: left;
 
-  .zoom-button {
-    //width: 30px;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  input {
+    width: 42px;
+    overflow: hidden;
+    border: 2px solid;
+  }
+
+  button {
     height: 42px;
+  }
+}
+
+.btn--cv {
+  float: left;
+  height: 42px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@include breakpoint($medium) {
+  .pdf-navigation-controls, #pdf-container {
+    width: $medium;
+  }
+}
+
+@include breakpoint($large) {
+  .pdf-navigation-controls, #pdf-container {
+    width: $large;
+  }
+}
+
+@include breakpoint($small) {
+  .pdf-navigation-controls, #pdf-container {
+    width: $small;
   }
 }
