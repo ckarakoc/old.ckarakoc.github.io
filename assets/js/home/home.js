@@ -16,3 +16,8 @@ document.getElementById("home-img-link").addEventListener("click", () => {
         bot.classList.add("home-img-animate-out");
     }
 });
+
+// Dynamically set the outer div height for the image
+document.getElementById("home-img-bottom").addEventListener("load", () => {
+    document.getElementById("home-img-outer").style.height = document.getElementById("home-img-bottom").height + "px";
+});
