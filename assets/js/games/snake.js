@@ -1,4 +1,4 @@
-// todo: everything
+// todo: everything https://www.educative.io/blog/javascript-snake-game-tutorial
 function drawGrid(context, w, h, sqrSize) {
     context.lineWidth = 1;
     context.fillStyle = "white";

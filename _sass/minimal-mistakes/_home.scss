@@ -1,0 +1,52 @@
+@keyframes homeImgAnimationIn {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+    transform-origin: bottom left;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+    transform-origin: top right;
+  }
+}
+
+@keyframes homeImgAnimationOut {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+    transform-origin: top right;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: scale(0, 0);
+    transform-origin: bottom left;
+  }
+}
+
+#home-img-outer {
+  .home-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: all 1s ease-in-out;
+  }
+
+  #home-img-top {
+    opacity: 0;
+  }
+
+  .home-img-animate-out {
+    animation-name: homeImgAnimationOut;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+
+  .home-img-animate-in {
+    animation-name: homeImgAnimationIn;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+}

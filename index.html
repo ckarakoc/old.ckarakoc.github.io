@@ -2,9 +2,17 @@
 layout: single
 author_profile: true
 header:
-    overlay_image: /assets/images/25243.jpg
-    overlay_filter: 0.5
+overlay_image: /assets/images/25243.jpg
+overlay_filter: 0.5
 ---
 
 
-<canvas id="snake-canvas" style="border: 5px solid black; margin-left: 1em;"></canvas>
+<!--<canvas id="snake-canvas" style="border: 5px solid black; margin-left: 1em;"></canvas>-->
+<div id="home-img-outer">
+    <a id="home-img-link" href="#">
+        <img id="home-img-bottom" class="home-img" src="{{ '/assets/images/tortoisehare.jpg' | relative_url }}"
+             alt="Slow and steady...">
+        <img id="home-img-top" class="home-img" src="{{ '/assets/images/tortoiseharewin.jpg' | relative_url }}"
+             alt="Wins the race...">
+    </a>
+</div>
