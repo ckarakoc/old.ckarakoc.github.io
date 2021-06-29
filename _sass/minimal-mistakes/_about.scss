@@ -1,0 +1,24 @@
+#about-content {
+  .about-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .fab, .about-icon {
+      font-size: 3em;
+      margin: 0.1em auto 0.1em 0.1em;
+      color: red;
+    }
+
+
+  }
+}
+.about-icon {
+  width: 1em;
+  height: 1em;
+  --svgcolor: red;
+  //background-color: blue;
+  filter: $rust-filter;
+  color: pink !important;
+  stroke: red !important;
+}

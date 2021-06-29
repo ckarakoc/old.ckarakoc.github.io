@@ -29,9 +29,12 @@
 @import "minimal-mistakes/footer";
 @import "minimal-mistakes/search";
 @import "minimal-mistakes/syntax";
+
+/* Pages */
 @import "minimal-mistakes/pdf";
 @import "minimal-mistakes/projects";
 @import "minimal-mistakes/home";
+@import "minimal-mistakes/about";
 
 /* Utility classes */
 @import "minimal-mistakes/utilities";

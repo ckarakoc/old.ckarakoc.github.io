@@ -32,5 +32,8 @@
     "add-banner": "node banner.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build:js": "npm run uglify && npm run minify && npm run add-banner"
+  },
+  "dependencies": {
+    "simple-icons": "^5.3.0"
   }
 }
