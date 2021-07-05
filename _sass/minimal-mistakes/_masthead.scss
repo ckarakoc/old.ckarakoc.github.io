@@ -41,6 +41,7 @@
 
 .site-logo img {
   max-height: 2rem;
+  border-radius: 50%;
 }
 
 .site-title {
@@ -85,6 +86,7 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  font-family: $amkestrel;
 
   &--lg {
     padding-right: 2em;
