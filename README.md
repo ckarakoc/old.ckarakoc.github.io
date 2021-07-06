@@ -9,7 +9,8 @@
 - Write a better README
 - Make dark mode properly ([button](https://jsfiddle.net/ckarakoc/L4zrjb18/192/), [starry sky](https://codepen.io/sylvaingarnot/pen/LNJgaZ))
 - Implement switching between different skins (a possibility without 2 css files)
-- Would a CHANGELOG.MD be a good idea? 
+- Would a CHANGELOG.MD be a good idea?
+- Add variable colors from [simpleicons.org](simpleicons.org)
 - Implement animations properly
 - Choose Fonts properly
 - Projects: Add more beautiful (mobile-compatible) project-blocks
