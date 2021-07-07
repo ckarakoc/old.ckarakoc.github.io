@@ -36,12 +36,12 @@ $caption-font-family: $serif !default;
 /* Custom Fonts */
 @font-face {
   font-family: "American Kestrel";
-  src:url("/assets/fonts/AmericanKestrelExpanded-nzxg.otf");
+  src: url("/assets/fonts/AmericanKestrelExpanded-nzxg.otf");
 }
 
 @font-face {
   font-family: "Paladins Laser";
-  src:url("/assets/fonts/PaladinsLaser-BERx.otf");
+  src: url("/assets/fonts/PaladinsLaser-BERx.otf");
 }
 
 $amkestrel: "American Kestrel", fantasy !default;
@@ -117,13 +117,85 @@ $pinterest-color: #cb2027 !default;
 $reddit-color: #ff4500 !default;
 $rss-color: #fa9b39 !default;
 $soundcloud-color: #ff3300 !default;
-$stackoverflow-color: #fe7a15 !default;
 $tumblr-color: #32506d !default;
 $twitter-color: #55acee !default;
 $vimeo-color: #1ab7ea !default;
 $vine-color: #00bf8f !default;
 $youtube-color: #bb0000 !default;
 $xing-color: #006567 !default;
+
+/* simpleicons */
+$html5-color: #E34F26 !default;
+$css3-color: #1572B6 !default;
+$sass-color: #CC6699 !default;
+$javascript-color: #F7DF1E !default;
+$java-color: #007396 !default;
+$vue-color: #4FC08D !default;
+$vuetify-color: #1867C0 !default;
+$react-color: #61DAFB !default;
+$angular-color: #DD0031 !default;
+$python-color: #3776AB !default;
+$rprog-color: #276DC3 !default;
+$php-color: #777BB4 !default;
+$laravel-color: #FF2D20 !default;
+$nodejs-color: #339933 !default;
+$npm-color: #CB3837 !default;
+$rust-color: #000000 !default;
+$git-color: #F05032 !default;
+$bootstrap-color: #7952B3 !default;
+$wordpress-color: #21759B !default;
+$unity-color: #000000 !default;
+$android-color: #3DDC84 !default;
+$postgress-color: #4169E1 !default;
+$mysql-color: #4479A1 !default;
+$docker-color: #2496ED !default;
+$nodemon-color: #76D04B !default;
+$typescript-color: #3178C6 !default;
+$symfony-color: #000000 !default;
+$spring-color: #6DB33F !default;
+$scala-color: #DC322F !default;
+$scipy-color: #8CAAE6 !default;
+$scikitlearn-color: #F7931E !default;
+$numpy-color: #013243 !default;
+$pandas-color: #150458 !default;
+$redis-color: #DC382D !default;
+$nginx-color: #009639 !default;
+$markdown-color: #000000 !default;
+$junit5-color: #25A162 !default;
+$jinja2-color: #B41717 !default;
+$jekyll-color: #CC0000 !default;
+$maven-color: #C71A36 !default;
+$gradle-color: #02303A !default;
+$django-color: #092E20 !default;
+$cpp-color: #00599C !default;
+$csharp-color: #239120 !default;
+$autohotkey-color: #334455 !default;
+
+$wireshark-color: #1679A7 !default;
+$xampp-color: #FB7A24 !default;
+$terminal-color: #4D4D4D !default;
+$terminal-gnu-color: #4EAA25 !default;
+$gulp-color: #CF4647 !default;
+
+$bower-color: #EF5734 !default;
+$composer-color: #885630 !default;
+$heroku-color: #430098 !default;
+$jupyter-color: #F37626 !default;
+$overleaf-color: #47A141 !default;
+$postman-color: #FF6C37 !default;
+$virtualbox-color: #183A61 !default;
+$steam-color: #000000 !default;
+$intellij-color: #000000 !default;
+$stackoverflow-color: #F58025 !default;
+$discord-color: #5865F2 !default;
+$firefox-color: #FF7139 !default;
+$chrome-color: #4285F4 !default;
+$linode-color: #00A95C !default;
+$linux-color: #FCC624 !default;
+$raspberrypi-color: #A22846 !default;
+$jenkins-color: #D24939 !default;
+$travisci-color: #3EAAAF !default;
+$circleci-color: #343434 !default;
 
 /* links */
 $link-color: mix(#000, $info-color, 20%) !default;
